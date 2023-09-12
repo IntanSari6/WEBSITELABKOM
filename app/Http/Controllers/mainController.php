@@ -22,6 +22,10 @@ class mainController extends Controller
     {
         return view('requestLoans.index');
     }
+    public function schedule()
+    {
+        return view('schedule.index');
+    }
 
     public function manage_loans()
     {

@@ -31,6 +31,8 @@ Route::get('/Inventaris', [InventoryController::class, 'inventaris']);
 
 Route::get('/requestLoans', [MainController::class, 'requestLoans']);
 
+Route::get('/schedule', [MainController::class, 'schedule']);
+
 Route::get('/manage_loans', [MainController::class, 'manage_loans']);
 
 Route::get('/manage_lab_inventory', [ManageInventoryController::class, 'manage_lab_inventory']);

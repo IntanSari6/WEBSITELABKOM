@@ -26,20 +26,20 @@
             </li>
 
             <li class="dropdown">
-                <a href="Jadwal_Peminjaman"><i class="fas fa-th-large"></i> <span>Jadwal Peminjaman</span></a>
+                <a class="nav-link {{ Request::is('schedule') ? 'active' : '' }}" href="schedule"><i class="fas fa-th-large"></i> <span>Jadwal Peminjaman</span></a>
             </li>
 
             <li class="menu-header">Administrator</li>
 
             <li class="dropdown">
-                <a href="/manage_lab_inventory"><i class="fas fa-columns"></i> <span>Kelola Inventaris Lab</span></a>
+                <a class="nav-link {{ Request::is('manage_lab_inventory') ? 'active' : '' }}" href="/manage_lab_inventory"><i class="fas fa-columns"></i> <span>Kelola Inventaris Lab</span></a>
             </li>
 
             <li class="dropdown">
-                <a href="/manage_loans"><i class="far fa-file-alt"></i> <span>Kelola Peminjaman</span></a>
+                <a class="nav-link {{ Request::is('manage_loans') ? 'active' : '' }}" href="/manage_loans"><i class="far fa-file-alt"></i> <span>Kelola Peminjaman</span></a>
             </li>
 
             <li class="dropdown">
-                <a href="/manage_schedule"><i class="fas fa-th-large"></i> <span>Kelola Jadwal Lab</span></a>
+                <a class="nav-link {{ Request::is('manage_schedule') ? 'active' : '' }}" href="/manage_schedule"><i class="fas fa-th-large"></i> <span>Kelola Jadwal Lab</span></a>
             </li>
 </div>
